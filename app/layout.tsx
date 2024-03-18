@@ -7,11 +7,6 @@ export const roboto = Roboto({
   subsets: ['latin'],
 });
 
-const metadata: Metadata = {
-  title: 'Newsletter Sign Up',
-  description: 'Newsletter Sign Up Challenge',
-};
-
 export default function RootLayout({
   children,
 }: Readonly<{

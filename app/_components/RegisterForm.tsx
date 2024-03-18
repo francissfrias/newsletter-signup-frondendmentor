@@ -1,5 +1,5 @@
 'use client';
-import React, { ChangeEventHandler, FormEvent, useState } from 'react';
+import React, { useState } from 'react';
 import coverImageMobile from '@/public/assets/images/illustration-sign-up-mobile.svg';
 import coverImageDesktop from '@/public/assets/images/illustration-sign-up-desktop.svg';
 import Image from 'next/image';
@@ -25,7 +25,7 @@ const RegisterForm = () => {
       setError(true);
       return;
     }
-    router.push('/subscribed');
+    router.push(`/subscribed/${email}`);
     router.refresh();
   };
 
