@@ -2,6 +2,9 @@ import { Metadata } from 'next';
 import React from 'react';
 import SubscribeForm from '../../_components/SubscribedForm';
 
+export async function generateStaticParams() {
+  return [{ email: 'test@gmail.com' }];
+}
 export const metadata: Metadata = {
   title: 'Newsletter Subscribed!',
   description: 'Newsletter Sign Up Challenge',
