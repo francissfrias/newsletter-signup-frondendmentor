@@ -1,6 +1,4 @@
 import React, { ChangeEvent, forwardRef } from 'react';
-import { roboto } from '../layout';
-
 interface ITextfield extends React.InputHTMLAttributes<HTMLInputElement> {
   className?: string;
   label?: string;
@@ -10,9 +8,7 @@ interface ITextfield extends React.InputHTMLAttributes<HTMLInputElement> {
 const Textfield = forwardRef<HTMLInputElement, ITextfield>(
   ({ className, label, error, ...props }, ref) => {
     return (
-      <div
-        className={`${roboto.className} flex flex-col m-auto space-y-2 w-full`}
-      >
+      <div className={` flex flex-col m-auto space-y-2 w-full`}>
         <div className='flex justify-between'>
           <h1 className='text-xs font-bold text-neutralDarkSlateGrey '>
             {label}
