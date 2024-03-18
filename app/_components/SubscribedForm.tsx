@@ -42,9 +42,9 @@ const SubscribeForm = ({ email }: PageProps) => {
           onClick={handleSubmit}
           className='group relative transition duration-500  bg-neutralDarkSlateGrey p-4 h-fit w-full md:h-14 text-neutralWhite rounded-lg font-bold spacing tracking-normal sm:text-base md:p-2 md:text-sm xl:text-base  mt-6 hover:shadow-2xl'
         >
-          Subscribe to monthly newsletter
+          Dismiss message
           <div className=' flex-1 p-4 md:h-14   font-bold spacing tracking-normal  opacity-0 hover:opacity-100 transition duration-500 absolute  rounded-lg inset-0 h-full w-full bg-gradient-to-r from-pink-600 to-primaryTomato text-neutralWhite '>
-            Subscribe to monthly newsletter
+            Dismiss message
           </div>
         </button>
       </div>
